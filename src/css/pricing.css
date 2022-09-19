@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.banner-image-main{
+    background: url(../../img/feature-banner.png), no-repeat, center center / cover;
+    height: 650px;
+    position: absolute;
+    width: 100%;
+    background-size: 50% 95%;
+    
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    color: #585858;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 23px 0px; */
+    padding: 0px 150px;
+    height: 70px;
+    
+}
+
+.menu .logo img {
+    height: 24px;
+    
+
+}
+
+.list-menu {}
+
+.sub-menu{
+    display: none;
+}
+.menu .list-menu ul {
+    
+    display: flex;
+    list-style-type: none;
+}
+
+.menu .list-menu li {
+    
+    margin: 0px 10px;
+
+}
+
+.menu .list-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    padding: 7px 8px;
+    font-weight: 700;
+}
+
+.menu .list-menu a:hover {
+    color: #ffffff;
+    background-color: #f56363;
+    border-radius: 4px;
+}
+#pricing{
+    background-color: #f56363;
+    border-radius: 4px;
+    color: #ffffff;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-box{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+.main-box .image{
+    margin-left: 200px;
+}
+.main-box .image img{
+    border-radius:40% ;
+}
+main .text{
+    text-align: center;
+    margin-left: 150px;
+
+}
+@keyframes text{
+    from{
+        transform: scaleX(-300px);
+    }
+    to{
+        transform: scaleX(300px);
+    }
+}
+main .text span{
+    font-family: 'Crete Round', serif;
+    font-size: 35px;
+}
+main .text h2{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+main .text p{
+    font-style: italic;
+    font-weight: 600;
+}
+main .text button{
+    width: 155px;
+    height: 42px;
+    padding: 10px 30px;
+    background-color: #f56363;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+}
+main .text button:hover{
+        background-color: black;
+        transition: all 0.4s ease-out;
+    
+}
+/*PRICING*/
+.pricing-box{
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.pricing-box, .line2{
+    
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    
+    
+}
+.pricing-item{
+    /* display: flex; */
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(89, 81, 81, 0.307) ;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    
+}
+.pricing-item:hover{
+    box-shadow: 2px 3px 1px 1px #f5636390;
+    transform: scale(1.04);
+    transition:all 1s ease-out;
+    background-color: bisque;
+    cursor: pointer;
+    border: none;
+}
+
+.pricing-item .text{
+   margin: 20px;
+    
+}
+.pricing-item .text h2{
+    color: #585858;
+    font-size: 25px;
+}
+.pricing-item .text p{
+    font-family: "Open Sans", sans-serif;
+    margin: 10px 0px;
+    line-height: 2;
+    color: #585858;
+}
+.pricing-item .price{
+    display: flex;
+    justify-content: center;
+}
+del{
+    font-family: 'Open Sans', serif;
+    font-size: 30px;
+    color: #585858;  
+}
+.pricing-item .price span{
+    font-family: 'Crete Round', serif;
+    font-size: 70px;
+    color: #f56363;
+    
+}
+.pricing-item .btn{
+    display: flex;
+    justify-content: center;
+}
+.pricing-item button{
+    width: 155px;
+    height: 42px;
+    padding: 10px 30px;
+    background-color: #f56363;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.pricing-item button:hover{
+        background-color: black;
+        transition: all 0.4s ease-out;
+    animation: btn_price 1s ease-out 1;
+}
+@keyframes btn_price{
+    to{
+        transform: translateX(10px );
+        border: 4px solid rgb(7, 23, 255);
+        
+    }
+}
+
+
+/*footer*/
+footer{
+    background-color: #fafafa;
+    padding: 70px 0px;
+}
+.box-footer{
+display: grid;
+gap: 220px;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 0px 350px;
+
+}
+.box-logo img{
+    height: 24px;
+}
+.box-logo p{
+    margin: 20px 0px 16px;
+    color: #585858;
+    font-size: 14px;
+}
+.box-logo{
+    /* width: 379px;
+    height: 195px; */
+}
+.box-solution h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+    color: #585858;
+}
+li{
+    list-style-type: none;
+}
+.box-solution li{
+    margin: 5px 0px;
+
+}
+.box-solution li:hover{
+    text-decoration: underline;
+}
+.box-link li:hover{
+    text-decoration: underline;
+}
+.box-solution a{
+    font-size: 14px;
+}
+.box-link h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    margin-bottom: 15px;
+}
+
+.box-link li{
+    margin: 5px 0px;
+
+}
+.box-link a{
+    font-size: 14px;
+}
+.footer-coppyright{
+   color:  rgba(255, 255, 255, 0.5);
+    height: 80px;
+    background-color: #222328;
+    text-align: center;
+    
+}
+.footer-coppyright p{
+    padding-top: 30px;
+}
+
+@media (min-width:800px ) and (max-width: 1024px) {
+    .container{
+        width: 99%;
+        
+    }
+    .box-logo img{
+        margin-left:100px ;
+    }
+    .banner-image-main {
+        height: 500px;
+
+    }
+    .menu{
+        padding: 0;
+    }
+    .sub-menu{
+        display: none;
+    }
+    .container .text{
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .main-box{
+        margin-top: 0;
+    }
+    .main-box .image{
+        margin-left: 50px;
+    }
+    main .text{
+        margin-left: 100px;
+    }
+    main .text span{
+        font-size:30px ;
+    }
+    main .text h2{
+        font-size: 30px;
+    }
+    /*PRICING*/
+    .pricing-box{
+        padding-top: 0;
+    }
+    .pricing-item{
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 600px;
+    }
+    .box-footer{
+        width: 100%;
+        gap: 0px;
+        margin: 0 ;
+    }
+    .box-logo p{
+        margin-left: 100px;
+        width: 250px;
+    }
+    .box-logo .icon-team{
+        margin-left: 100px;
+    }
+    .box-solution{
+        margin-left: 50px;
+    }
+    
+}
+@media (min-width:10px ) and (max-width: 799px){
+    .container{
+        width: 95%;
+    }
+    #btn_mobile{
+        border: unset;
+    }
+    
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0px;
+        background: rgb(169, 169, 169);
+        transition: .6s;
+        height: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: 480px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 30px 0px;
+    }
+    li{
+        font-size: 50px;
+        border-bottom: 1px solid white;
+    }
+    li:hover{
+        color: #fffefe;
+    }
+    .sub-menu{
+        display: block; 
+    }
+    .box-logo img{
+        margin: 0;
+    }
+    .banner-image {
+        height: 550px;
+       
+    }
+    .menu{
+        padding: 0;
+    }
+    .menu .list-menu a:hover {
+        color: #ffffff;
+        background-color: #33333300;
+        border-radius: 4px;
+    }
+    .sub-menu i{
+        font-size:36px ;
+    }
+    .container .text{
+        margin-top: 0;
+    }
+    .banner-image-main{
+        
+    }
+    .main-box{
+        display: block;
+        width: 100%;
+    }
+    .main-box .image{
+        margin-left: 0;
+        text-align: center;
+    }
+    main .text{
+        margin-left:0 ;
+        margin-bottom: 40px;
+    }
+    
+    .main-box .image img{
+        width: 80%;
+    }
+    .pricing-box{
+        margin-top: 100px;
+    }
+    .pricing-item{
+        display: block;
+        margin: 10px;
+        height: 750px;
+    }
+    .pricing-item .text h2{
+        margin-top: 50px;
+    }
+    .pricing-item .text {
+        width:90% ;
+    }
+    .pricing-item .price{
+        margin-left: 100px;
+    }
+    footer{
+        margin-top: 100px;
+    }
+    .box-footer{
+        
+        width: 100%;
+        gap: 0px;
+        margin: 0 ;
+        display: block;
+        text-align: center;
+    }
+    .box-logo p{
+        margin: 20px 50px;
+
+    }
+    .box-logo .icon-team{
+        margin: 10px 0px;
+    }
+    .box-solution{
+       margin: 40px 0px;
+    }
+}

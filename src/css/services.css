@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.banner-image-main{
+    background: url(../../img/feature-banner.png), no-repeat, center center / cover;
+    height: 800px;
+    position: absolute;
+    width: 100%;
+    background-size: 50% 50%;
+    
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    color: #585858;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 23px 0px; */
+    padding: 0px 150px;
+    height: 70px;
+    
+}
+
+.menu .logo img {
+    height: 24px;
+    
+
+}
+
+.list-menu {}
+.sub-menu{
+    display: none;
+}
+.menu .list-menu ul {
+    
+    display: flex;
+    list-style-type: none;
+}
+
+.menu .list-menu li {
+    
+    margin: 0px 10px;
+
+}
+
+.menu .list-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    padding: 7px 8px;
+    font-weight: 700;
+}
+
+.menu .list-menu a:hover {
+    color: #ffffff;
+    background-color: #f56363;
+    border-radius: 4px;
+}
+#services{
+    background-color: #f56363;
+    border-radius: 4px;
+    color: #ffffff;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-image img{
+    margin-top: 150px;
+    width: 300px;
+    border: 2px solid transparent;
+    box-shadow: 1px 0px 2px 2px rgba(0, 0, 255, 0.384);
+    border-radius: 50%; 
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    animation: banner-boder 10s infinite linear;
+}
+
+@keyframes banner-boder{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.container .text {
+    width: 569px;
+    top: 0;
+    margin-left: 150px;
+    margin-top: 250px;
+
+}
+
+.container .text span {
+    font-family: 'Crete Round', serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.container .text h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+.container .text p {
+    margin-top: 30px;
+}
+
+.container .text button {
+    width: 155px;
+    height: 42px;
+    padding: 10px 30px;
+    background-color: #f56363;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: pointer;
+    
+}
+
+ .text button:hover {
+    background-color: black;
+    transition: all 0.4s ease-out;
+}
+.banner{
+    text-align: center;
+    margin-right: 200px;
+}
+h4{
+    margin: 20px 0px;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+}
+/*star*/
+.product_rating{
+    margin-left: 900px;
+}
+.star-rating{
+    
+    user-select: none;/*Thuộc tính để người dùng có muốn bôi đen toàn bộ hay ko*/
+}
+.star{
+    font-size: 40px;
+    color: rgb(255, 119, 0);
+    background-color: unset; /*loại bỏ nền đường viền của button*/
+    border: none;
+}
+.star:hover{
+    cursor: pointer;
+}
+.services-news{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 60px;
+}
+.services-box{
+    /* width: 400px; */
+    border: 1.4px solid rgba(205, 205, 205, 0.451);
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.services-box:hover{
+    transform: scale(1.04);
+    transition:all 0.4s ease-out;
+    background: #dcdcdc98;
+    border: unset;
+}
+.services-box i{
+    margin-top: 20px;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.services-box h4{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.services-text h4:hover{
+    text-decoration: underline;
+    color: #f56363;
+    cursor: pointer;
+    animation: texth4 1s ease-out 1 ;
+}
+@keyframes texth4{
+    to{
+        transform: translateX(25px );
+    }
+}
+
+.services-text p{
+    line-height: 2.5;
+    margin-left: 20px;
+}
+/*footer*/
+/*footer*/
+footer{
+    margin-top: 100px;
+    background-color: #fafafa;
+    padding: 70px 0px;
+}
+.box-footer{
+display: grid;
+gap: 220px;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 0px 350px;
+
+}
+.box-logo img{
+    height: 24px;
+}
+.box-logo p{
+    margin: 20px 0px 16px;
+    color: #585858;
+    font-size: 14px;
+}
+.box-logo{
+    /* width: 379px;
+    height: 195px; */
+}
+
+
+.icon-team i{
+    border: 1px solid #222328
+    ;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 8px;
+    margin: 0px 4px;
+}
+.icon-team i:hover{
+    background-color: #074888;
+    color: #fafafa;
+    cursor: pointer;
+}
+.box-solution h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    margin-bottom: 15px;
+}
+a{
+    text-decoration: none;
+    color: #585858;
+}
+li{
+    list-style-type: none;
+}
+.box-solution li{
+    margin: 5px 0px;
+
+}
+.box-solution li:hover{
+    text-decoration: underline;
+}
+.box-link li:hover{
+    text-decoration: underline;
+}
+.box-solution a{
+    font-size: 14px;
+}
+.box-link h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #585858;
+    margin-bottom: 15px;
+}
+
+.box-link li{
+    margin: 5px 0px;
+
+}
+.box-link a{
+    font-size: 14px;
+}
+.footer-coppyright{
+   color:  rgba(255, 255, 255, 0.5);
+    height: 80px;
+    background-color: #222328;
+    text-align: center;
+    
+}
+.footer-coppyright p{
+    padding-top: 30px;
+}
+
+@media (min-width:800px ) and (max-width: 1024px) {
+    .container{
+        width: 99%;
+    }
+    .menu{
+        padding: 0;
+    }
+    .container .text{
+        margin-top: 80px; 
+    }
+    main{
+        justify-content: center;
+    }
+    main .banner{
+        margin-left:100px ;
+    }
+    /*services*/
+    .services-news{
+       margin: 300px 20px 0px 20px;
+        gap: 20px;
+    }
+    .services-box{
+        height: 550px;
+    }
+    .services-box h4{
+        font-size: 25px;
+    }
+    .box-footer{
+        width: 100%;
+        gap: 0px;
+        margin: 0 ;
+    }
+    .box-logo {
+        margin-left: 100px;
+    }
+    .box-logo p{
+        width: 250px;
+    }
+    .box-solution{
+        margin-left: 50px;
+    }
+}
+@media (min-width:10px) and (max-width: 799px){
+    .container{
+        width: 95%;
+    }
+    #btn_mobile{
+        border: unset;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0px;
+        background: rgb(169, 169, 169);
+        transition: .6s;
+        height: 0px;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: 480px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 30px 0px;
+    }
+    li{
+        font-size: 50px;
+        border-bottom: 1px solid white;
+    }
+    li:hover{
+        color: #fffefe;
+    }
+    .sub-menu{
+        display: block; 
+    }
+    .box-logo img{
+        margin: 0;
+    }
+    
+    .menu{
+        padding: 0;
+    }
+    .menu .list-menu a:hover {
+        color: #ffffff;
+        background-color: #33333300;
+        border-radius: 4px;
+    }
+    .sub-menu i{
+        font-size:36px ;
+    }
+    main{
+        display: block;
+    }
+    .container .text{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .container .text span{
+        font-size: 30px;
+    }
+    .container .text h1{
+        font-size: 20px;
+    }
+    .banner{
+        margin: 0;
+    }
+    .banner-image{
+        height: max-content;
+    }
+    .banner-image img{
+        width: 200px;
+        margin-top: 50px;
+    }
+    h4{
+        margin-top: 20px;
+    }
+    .banner-image-main{
+        height: 850px;
+    }
+    .services-news{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+    grid-template-columns: 1fr ;
+    gap: 10px;
+    }
+    .services-box{
+        height: 450px;
+    }
+    .services-box h4{
+        font-size: 25px;
+    }
+    .box-footer{
+        width: 100%;
+        gap: 0px;
+        margin: 0 ;
+        display: block;
+        text-align: center;
+    }
+    .box-logo p{
+        margin: 20px 50px;
+
+    }
+    .box-logo .icon-team{
+        margin: 10px 0px;
+    }
+    .box-solution{
+       margin: 40px 0px;
+    }
+    
+    
+
+}
