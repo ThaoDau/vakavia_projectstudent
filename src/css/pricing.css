@@ -158,6 +158,7 @@ main .text button:hover{
     height: 400px;
     width: 400px;
     border-radius: 20px;
+    transition: 1s;
     
 }
 .pricing-item:hover{
