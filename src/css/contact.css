@@ -160,6 +160,7 @@ main .text button:hover {
     padding: 100px 0px;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
 
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
@@ -177,12 +178,13 @@ form a:hover {
 
 .login {
     margin: 0 auto;
-    border: 1px solid #22232837;
+    border: 1px solid #96989f37;
     height: 400px;
     width: 40%;
     border-radius: 20px;
     padding-right: 0px;
     padding-top: 20px;
+    transition: 0.5s;
 
 }
 
@@ -237,7 +239,7 @@ button:hover {
 }
 
 .login:hover {
-    box-shadow: 0px 2px 0px 2px #f56363;
+    box-shadow: 0px 0.5px 0.5px 0.5px #f56363;
 }
 
 .box-form {
