@@ -66,4 +66,14 @@ function validateForm(){
     }
 }
 
+/*login-logup*/
+function logup(){
+    window.location.href = 'dangky.html';
+    alert('Chắc chắn sẽ đăng ký ?');
+}
+function login(){
+    window.location.href = 'contact.html';
+    alert('Bạn muốn chuyển sang đăng nhập ?');
+}
+
 
