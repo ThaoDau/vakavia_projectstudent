@@ -129,6 +129,7 @@ main .text button{
     font-weight: 600;
     margin-top: 30px;
     cursor: pointer;
+    transition: 0.4s;
 }
 main .text button:hover{
         background-color: black;
@@ -154,12 +155,11 @@ main .text button:hover{
     align-items: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    border: 2px solid rgba(89, 81, 81, 0.307) ;
+    border: 2px solid rgba(193, 189, 189, 0.842) ;
     height: 400px;
     width: 400px;
     border-radius: 20px;
-    transition: 1s;
-    
+    transition: 0.5s;
 }
 .pricing-item:hover{
     box-shadow: 2px 3px 1px 1px #f5636390;
@@ -167,7 +167,7 @@ main .text button:hover{
     transition:all 1s ease-out;
     background-color: bisque;
     cursor: pointer;
-    border: none;
+    border: white;
 }
 
 .pricing-item .text{
